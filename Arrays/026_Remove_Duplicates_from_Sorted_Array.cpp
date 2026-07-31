@@ -20,6 +20,8 @@ Space Complexity: O(1)
 -------------------------------------------------------
 */
 
+#include <vector>
+using namespace std;
 
 class Solution {
 public:
