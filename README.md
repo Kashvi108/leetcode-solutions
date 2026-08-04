@@ -42,8 +42,8 @@ This repository contains my C++ solutions to LeetCode problems solved during my 
 
 | Difficulty | Solved |
 |------------|--------|
-| Easy | 0 |
-| Medium | 0 |
+| Easy | 6 |
+| Medium | 2 |
 | Hard | 0 |
 
 ---
