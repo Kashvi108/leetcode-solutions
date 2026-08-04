@@ -38,6 +38,5 @@ public:
             maxsum=max(maxsum,currsum);
         }
         return maxsum;
-
     }
 };
