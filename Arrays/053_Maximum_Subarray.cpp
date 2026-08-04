@@ -10,19 +10,24 @@ Topic:
 - Kadane's Algorithm
 
 Key Insight:
-A negative running sum can never help increase the maximum subarray sum.
-If the current sum becomes negative, start a new subarray from the current element.
+At every index, decide whether to:
+- Start a new subarray from the current element, or
+- Extend the existing subarray.
+Choose the option that gives the maximum sum.
 
 Approach:
-Use Kadane's Algorithm:
-- Maintain a running sum of the current subarray.
-- At each element, either extend the current subarray or start a new one.
-- Keep track of the maximum sum encountered during traversal.
+- Initialize both current sum and maximum sum with the first element.
+- For each remaining element:
+  - Update the current sum as the maximum of:
+    1. Current element itself.
+    2. Current element + previous current sum.
+- Update the maximum sum after every iteration.
 
 Time Complexity: O(n)
 Space Complexity: O(1)
 -------------------------------------------------------
 */
+
 
 #include <vector>
 #include <algorithm>
